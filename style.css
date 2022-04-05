@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lobster&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+li {
+    list-style-type: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #26272B;
+}
+
+/Styles for header page/
+
+.heroBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("./images/kefir.6.jfif");
+    color: white;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buttonPresentations{
+    width: auto;
+    height: auto;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: #FA8F13;
+    margin-right: 5em;
+    margin-left: 5em;
+    
+    
+}
+
+.buttonPresentations--red{
+    width: auto;
+    height: auto;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: #fa4513;
+    margin-right: 5em;
+    margin-left: 5em;
+    
+}
+
+.buttonPresentations--green{
+    width: auto;
+    height: auto;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: #13fa13;
+    margin-right: 5em;
+    margin-left: 5em;
+    
+}
+
+.buttonPresentations--brown{
+    width: auto;
+    height: auto;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: #b99363;
+    margin-right: 5em;
+    margin-left: 5em;
+    
+}
+
+.buttonPresentations--purple{
+    width: auto;
+    height: auto;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: #8313fa;
+    margin-right: 5em;
+    margin-left: 5em;
+    
+}
+
+
+
+
+.nav {
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.navContent {
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 10px;
+    
+}
+
+.nav-link {
+    color: white;
+    transition: all .5 ease;
+}
+
+.nav-link:hover {
+    color: rgb(221, 221, 221);
+}
+
+footer {
+    display: block;
+    box-sizing: border-box;
+    height: 100px;
+    background-color: #005F29;
+    clip-path: ellipse(60% 100% at 51% 100%);
+    color: white;
+}
+
+.footer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.logo {
+    width: 90px;
+
+}
+
+.textoindex {
+    padding: 5em;
+    text-align: center;
+
+
+}
+
+.video1 {
+    display: flex;
+    justify-content: center;
+}
+
+.containergaleria {
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+img {
+    width: 300px;
+    justify-self: center;
+
+}
+
+.conteinerq {
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1em;
+    align-items: center;
+}
+
+.title {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    
+
+}
+
+/Que hacemos/
+
+@media only screen and (max-width:500px) {
+
+    .containergaleria {
+        grid-template-columns: 100%;
+        grid-gap: 1rem;
+    }
+}
+
+.container__juani{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* stilo texto*/ 
+
+.titleSection{
+    margin: 5em;
+}
+
