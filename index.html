@@ -20,9 +20,9 @@
            </button>
            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
              <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-               <a class="nav-link active" aria-current="page" href="/pages/quienessomos.html">¿Que Es? </a>
-               <a class="nav-link" href="/pages/nuestrosproductos.html"> Nosotros </a>
+              <a  class="nav-link active" aria-current="page" href="/">Home</a>
+               <a class="nav-link active" aria-current="page" href="#quees">¿Que Es? </a>
+               <a class="nav-link" href="/pages/nuestrosproductos.html" href="#nosotros"> Nosotros </a>
                <a class="nav-link" href="/pages/galeria.html">Multimedia</a>
                <a class="nav-link" href=/pages/contacto.html>Contacto</a>
              </div>
@@ -78,7 +78,7 @@
 </main>
 
 
-<section id="quienesSomos">
+<section id="quees">
   <div class=" quienesSomos">
     <div class="titleSection">
         <h1>UNA BEBIDA <br> QUE CURA</h1>
@@ -102,7 +102,7 @@
 
 </section>
 <!--Quienes somos-->
-<div class="titleSection">    <h1>Nosotros </h1>  </div>
+<div class="titleSection" id="nosotros">    <h1>Nosotros </h1>  </div>
 </div> 
 <div class="container">
   <div class="row">
@@ -117,7 +117,7 @@
     </div>
     <div class="col-md-6 container__juani">
       
-      <div class="card" style="width: 18rem;">
+      <div class="card " style="width: 18rem;">
         <img src="images/Manujpg3.png" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -164,20 +164,25 @@
   <p>   JuaniConstruye@gmail.com</p>
 
 </div>   
-<div>
+
 <h2>Escribinos</h2>
-   <form action="Nombre">
+<div >
+   <form action="Nombre" class="contacto">
    <label for="">Nombre</label>
    <input type="text"name="Nombre">
-<p><label for="">Apellido</label><input type="text"name="Apellido"></p>
+<p><label for="">Apellido</label> <input type="text"name="Apellido"></p>
      
 <p><label for="">Email</label><input type="email" name="Email" id="" placeholder="@"></p>
 
 <p><label for="">N° de Telefono</label><input type="text"name="N° de Telefono"></p>
+<div class="contacto2">
+  
+  
+  <p><textarea name="" id="" cols="30" rows="3" placeholder="Mensaje"></textarea></p>
+</div>
+<div class="contacto2"> <p><input type="submit" value="enviar"></p> </div>
 
-<p><textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea></p>
-<p><input type="submit" value="enviar"></p>
-
+</div>
 </div>
 </form>
 </div>
