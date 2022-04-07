@@ -6,17 +6,25 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none !important;
+$color-botonprimario: #FA8F13;
+$color-botonsegundo:  #13fa13;
+$color-botontercero:  #fa4513;
+$color-botoncuarto: #b99363;
+$color-botonquinto: #8313fa;
+
+ul{
+    li{
+       
+        list-style-type: none !important;
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
-li {
-    list-style-type: none !important;
-}
 
-a {
-    text-decoration: none;
-}
+
+
 
 body {
     font-family: 'Dosis', sans-serif;
@@ -34,71 +42,63 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .logo {
+        width: 90px;
+    
+    }
 }
+
+
 
 .buttonPresentations{
     width: auto;
     height: auto;
     padding: .5em;
     border-radius: .5em;
-    background-color: #FA8F13;
-    margin-right: 5em;
-    margin-left: 5em;
+    background-color:$color-botonprimario;
     
-    
-}
-
-.buttonPresentations--red{
-    width: auto;
+    &--red{
+        width: auto;
     height: auto;
     padding: .5em;
-    border-radius: .5em;
-    background-color: #fa4513;
-    margin-right: 5em;
+        border-radius: .5em;
+        background-color:$color-botontercero;
+        margin-right: 5em;
     margin-left: 5em;
-    
-}
-
-.buttonPresentations--green{
-    width: auto;
-    height: auto;
-    padding: .5em;
-    border-radius: .5em;
-    background-color: #13fa13;
-    margin-right: 5em;
+        
+            }
+    &--green{
+        width: auto;
+        height: auto;
+        padding: .5em;
+        border-radius: .5em;
+        background-color: $color-botonsegundo;
+        margin-right: 5em;
     margin-left: 5em;
-    
-}
-
-.buttonPresentations--brown{
-    width: auto;
-    height: auto;
-    padding: .5em;
-    border-radius: .5em;
-    background-color: #b99363;
-    margin-right: 5em;
+    }  
+    &--brown{
+        width: auto;
+        height: auto;
+        padding: .5em;
+        border-radius: .5em;
+        background-color:$color-botoncuarto;
+        margin-right: 5em;
     margin-left: 5em;
-    
-}
-
-.buttonPresentations--purple{
-    width: auto;
-    height: auto;
-    padding: .5em;
-    border-radius: .5em;
-    background-color: #8313fa;
-    margin-right: 5em;
+    }  
+    &--purple{
+        width: auto;
+        height: auto;
+        padding: .5em;
+        border-radius: .5em;
+        background-color:$color-botonquinto;
+        margin-right: 5em;
     margin-left: 5em;
-    
+
+    }    
 }
 
+ 
 
-
-
-.nav {
-    color: white;
-    font-family: 'Roboto', sans-serif !important;
-}
 
 .navContent {
     display: flex;
@@ -108,17 +108,21 @@ body {
     align-items: center;
     padding-left: 90px;
     padding-right: 10px;
-    
+    .nav-link {
+        color: white;
+        transition: all .5 ease;
+        .nav-link:hover {
+            color: rgb(221, 221, 221);
+            
+}
+}
 }
 
-.nav-link {
+.nav {
     color: white;
-    transition: all .5 ease;
+    font-family: 'Roboto', sans-serif !important;
 }
 
-.nav-link:hover {
-    color: rgb(221, 221, 221);
-}
 
 footer {
     display: block;
@@ -127,21 +131,19 @@ footer {
     background-color: #005F29;
     clip-path: ellipse(60% 100% at 51% 100%);
     color: white;
-}
-
-.footer {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.logo {
-    width: 90px;
+    .footer {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 
 }
+
+
+
+
+
 
 .textoindex {
     padding: 5em;
@@ -161,6 +163,14 @@ footer {
     padding: 5em;
     grid-auto-rows: rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+    .conteinerq {
+        display: grid;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 1em;
+        align-items: center;
+    }
 }
 
 img {
@@ -169,13 +179,7 @@ img {
 
 }
 
-.conteinerq {
-    display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1em;
-    align-items: center;
-}
+
 
 .title {
     font-size: 3em;
@@ -185,14 +189,6 @@ img {
 }
 
 
-
-@media only screen and (max-width:500px) {
-
-    .containergaleria {
-        grid-template-columns: 100%;
-        grid-gap: 1rem;
-    }
-}
 
 .container__juani{
     display: flex;
@@ -210,16 +206,25 @@ img {
     
     display: flex;
     align-items: flex-start;
-}
-.contacto2{
-    display: flex;
-    
-    height: 30px;
-    margin-left: 1em;
-
+    .contacto2{
+        display: flex;
+        
+        height: 30px;
+        margin-left: 1em;
 }
 
 
+}
+
+.car{
+    &Manu{
+        background-color: rgb(218, 47, 140);
+
+    }
+    &Juani{
+        background-color: rgb(119, 206, 219);
+    }
+}
 
 .card-body{
     background-color: darkgrey;
@@ -228,9 +233,12 @@ img {
 .bnav{
     background-color: white;
 }
-.carManu{
-   background-color: rgb(218, 47, 140);
-}
-.carJuani{
-    background-color: rgb(119, 206, 219);
+
+
+@media only screen and (max-width:500px) {
+
+    .containergaleria {
+        grid-template-columns: 100%;
+        grid-gap: 1rem;
+    }
 }

@@ -6,15 +6,11 @@
           box-sizing: border-box;
 }
 
-ul {
+ul li {
   list-style-type: none !important;
 }
 
-li {
-  list-style-type: none !important;
-}
-
-a {
+ul li a {
   text-decoration: none;
 }
 
@@ -33,14 +29,16 @@ body {
   background-size: cover;
 }
 
+.heroBackground .logo {
+  width: 90px;
+}
+
 .buttonPresentations {
   width: auto;
   height: auto;
   padding: .5em;
   border-radius: .5em;
   background-color: #FA8F13;
-  margin-right: 5em;
-  margin-left: 5em;
 }
 
 .buttonPresentations--red {
@@ -83,11 +81,6 @@ body {
   margin-left: 5em;
 }
 
-.nav {
-  color: white;
-  font-family: 'Roboto', sans-serif !important;
-}
-
 .navContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,14 +97,19 @@ body {
   padding-right: 10px;
 }
 
-.nav-link {
+.navContent .nav-link {
   color: white;
   -webkit-transition: all .5 ease;
   transition: all .5 ease;
 }
 
-.nav-link:hover {
+.navContent .nav-link .nav-link:hover {
   color: #dddddd;
+}
+
+.nav {
+  color: white;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 footer {
@@ -125,7 +123,7 @@ footer {
   color: white;
 }
 
-.footer {
+footer .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,10 +134,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.logo {
-  width: 90px;
 }
 
 .textoindex {
@@ -166,13 +160,7 @@ footer {
       grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 
-img {
-  width: 300px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.conteinerq {
+.containergaleria .conteinerq {
   display: -ms-grid;
   display: grid;
   grid-auto-rows: 22rem;
@@ -184,17 +172,15 @@ img {
           align-items: center;
 }
 
+img {
+  width: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 .title {
   font-size: 3em;
   font-family: 'Lobster', cursive;
-}
-
-@media only screen and (max-width: 500px) {
-  .containergaleria {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    grid-gap: 1rem;
-  }
 }
 
 .container__juani {
@@ -224,12 +210,20 @@ img {
           align-items: flex-start;
 }
 
-.contacto2 {
+.contacto .contacto2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 30px;
   margin-left: 1em;
+}
+
+.carManu {
+  background-color: #da2f8c;
+}
+
+.carJuani {
+  background-color: #77cedb;
 }
 
 .card-body {
@@ -240,11 +234,11 @@ img {
   background-color: white;
 }
 
-.carManu {
-  background-color: #da2f8c;
-}
-
-.carJuani {
-  background-color: #77cedb;
+@media only screen and (max-width: 500px) {
+  .containergaleria {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
