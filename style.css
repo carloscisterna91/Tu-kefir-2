@@ -14,16 +14,45 @@ ul li a {
   text-decoration: none;
 }
 
-body {
-  font-family: 'Dosis', sans-serif;
-  font-size: 16px;
+/*stilosnav*/
+.nav {
   color: white;
-  background-color: #26272B;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.navContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 90px;
+  padding-right: 10px;
+}
+
+.navContent .nav-link {
+  color: white;
+  -webkit-transition: all .5 ease;
+  transition: all .5 ease;
+}
+
+.navContent .nav-link .nav-link:hover {
+  color: #dddddd;
+}
+
+.bnav {
+  background-color: white;
 }
 
 .heroBackground {
   color: white;
-  height: 35vh;
+  height: 45vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,12 +62,22 @@ body {
   width: 90px;
 }
 
+/*stilosbodi*/
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #26272B;
+}
+
 .buttonPresentations {
   width: auto;
   height: auto;
   padding: .5em;
   border-radius: .5em;
   background-color: #FA8F13;
+  margin-right: 5em;
+  margin-left: 5em;
 }
 
 .buttonPresentations--red {
@@ -81,37 +120,7 @@ body {
   margin-left: 5em;
 }
 
-.navContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  min-width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 90px;
-  padding-right: 10px;
-}
-
-.navContent .nav-link {
-  color: white;
-  -webkit-transition: all .5 ease;
-  transition: all .5 ease;
-}
-
-.navContent .nav-link .nav-link:hover {
-  color: #dddddd;
-}
-
-.nav {
-  color: white;
-  font-family: 'Roboto', sans-serif !important;
-}
-
+/*stilosfooter*/
 footer {
   display: block;
   -webkit-box-sizing: border-box;
@@ -136,18 +145,19 @@ footer .footer {
           justify-content: center;
 }
 
+/* stilo texto*/
 .textoindex {
   padding: 5em;
   text-align: center;
 }
 
-.video1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.title {
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
+}
+
+.titleSection {
+  margin: 5em;
 }
 
 .containergaleria {
@@ -160,29 +170,16 @@ footer .footer {
       grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 
-.containergaleria .conteinerq {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-rows: 22rem;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 img {
-  width: 300px;
+  height: 100%;
+  width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.title {
-  font-size: 3em;
-  font-family: 'Lobster', cursive;
-}
-
+/*cards*/
 .container__juani {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,26 +193,8 @@ img {
           align-items: center;
 }
 
-/* stilo texto*/
-.titleSection {
-  margin: 5em;
-}
-
-.contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.contacto .contacto2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 30px;
-  margin-left: 1em;
+.card-body {
+  background-color: darkgrey;
 }
 
 .carManu {
@@ -226,19 +205,115 @@ img {
   background-color: #77cedb;
 }
 
-.card-body {
-  background-color: darkgrey;
+/*contacto*/
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.5em;
 }
 
-.bnav {
-  background-color: white;
+.contacto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  margin-left: 1em;
 }
 
-@media only screen and (max-width: 500px) {
-  .containergaleria {
+/* stilo form*/
+.form {
+  width: 100px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: white;
+}
+
+.botons {
+  width: 100%;
+  background: #37584b;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.icono {
+  font-size: 50px;
+  color: white;
+}
+
+/* stylo texto*/
+.text {
+  font-size: 18px;
+}
+
+.video {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 22rem;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorng {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 10px;
+  gap: 1em;
+}
+
+.contenedorng .dos {
+  grid-row: 2 span;
+}
+
+.contenedorng .tres {
+  grid-row: 2 span;
+}
+
+@media only screen and (max-width: 800px) {
+  .contenedorng {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     grid-gap: 1rem;
+  }
+  .heroBackground {
+    height: 50vh;
+  }
+  .video {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 1rem;
+  }
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  .navbar-toggler {
+    background-color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
